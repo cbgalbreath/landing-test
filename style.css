@@ -2,11 +2,10 @@ body {
     margin: 0px;
     background-color: #3c005a;
     font-family: "League Gothic", sans-serif;
-    color: #00ced1;
   }
   
   a {
-    color: #00ced1;
+    color: black;
   }
   
   /* Header Style*/
@@ -52,36 +51,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.5vw;
   }
   
-  .emaillist,
-  .video {
-    background-color: pink;
-    border-radius: 10px;
-    width: 50%;
-  }
   
   .services,
-  .locations {
-    background-color: white;
-    border-radius: 10px;
-    width: 50%;
-  }
-  
-  .emaillist,
-  .services,
-  .video,
   .locations {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 20px;
     padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
   }
-  
-  .register {
-    display: flex;
-    flex-direction: column;
+
+  #services{
+    list-style-type: none;
+  }
+  .service-list{
+    flex:1;
+  }
+  .store-image-container{
+    flex: 1;
+  }
+
+  .store-image{
+    width: 80%;
   }
   
   @media (max-width: 1000px) {
