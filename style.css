@@ -1,12 +1,8 @@
 body {
     margin: 0px;
     background-color: #3c005a;
-    font-family: "League Gothic", sans-serif;
-  }
-  
-  a {
-    color: black;
-  }
+    font-family: helvetica, sans-serif;
+}
   
   /* Header Style*/
   header {
@@ -16,14 +12,15 @@ body {
     align-items: center;
   }
   
-  .left-side,
-  .nav-links {
+  .left-side{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex: 1;
   }
   #header-img {
+    padding-left: 40px;
     padding-top: 40px;
+    padding-right: 40px;
     height: 60%;
   }
   
@@ -34,18 +31,8 @@ body {
   .brand h2 {
     font-size: 32px;
   }
-  .nav-links {
-    list-style: none;
-  }
-  nav {
-    display: flex;
-    flex: 1;
-  }
-  
-  .nav-link {
-    font-size: 46px;
-    text-decoration: none;
-  }
+
+  /*main body*/
   
   main {
     display: flex;
@@ -55,8 +42,7 @@ body {
   }
   
   
-  .services,
-  .locations {
+  .services {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -65,12 +51,52 @@ body {
     background-color: white;
     border-radius: 10px;
     width: 80%;
+    height: 75vh;
+  }
+
+  .button-container{
+    align-items: center;
+  }
+
+  .button{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: pink;
+    color: black;
+    padding: 10px;
+
+  }
+
+  .locations{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 95vh;
+  }
+
+  .location-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
   }
 
   #services{
     list-style-type: none;
   }
   .service-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex:1;
   }
   .store-image-container{
@@ -81,28 +107,112 @@ body {
     width: 80%;
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
+    body {
+      margin: 0px;
+      background-color: #3c005a;
+      font-family: helvetica, sans-serif;
+  }
+    
+    /* Header Style*/
+    header {
+      background-color: pink;
+      display: flex;
+      justify-content: flex-start;
+    }
+    
+    .left-side{
+      display: flex;
+      justify-content: flex-start;
+      flex: 1;
+    }
+    #header-img {
+      padding-left: 20px;
+      padding-top: 20px;
+      height: 40%;
+    }
+    
     .brand h1 {
-      font-size: 40px;
+      font-size: 20px;
     }
+    
     .brand h2 {
-      font-size: 30px;
+      font-size: 12px;
     }
   
-    .nav-link {
-      font-size: 30px;
-    }
-  
+    /*main body*/
+    
     main {
-      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5vw;
+    }
+    
+    
+    .services {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+      width: 80%;
+      height: 75vh;
     }
   
-    .emaillist,
-    .services,
-    .video,
-    .locations {
-      margin: 10px;
-      padding: 5px;
+    .button-container{
+      align-items: center;
+    }
+  
+    .button{
+      display: inline-block;
+      font-size: 20px;
+      text-decoration: none;
+      background-color: pink;
+      color: black;
+      padding: 10px;
+  
+    }
+  
+    .locations{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 10px;
+      width: 80%;
+      height: 95vh;
+    }
+  
+    .location-group{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+    }
+  
+    #services{
+      list-style-type: none;
+    }
+    .service-list{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex:1;
+    }
+    .store-image-container{
+      flex: 1;
+    }
+  
+    .store-image{
+      width: 80%;
     }
   }
   

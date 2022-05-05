@@ -10,7 +10,6 @@
 <body>
     <head>
         <title>Gotham Newsstand</title>
-        <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
       </head>
       
       <div class="container">
@@ -23,15 +22,9 @@
               <h2>San Antonio's Comic Store for Readers</h2>
             </div>
           </div>
-          <nav>
-            <ul class="nav-links">
-              <li><a href="#locations" class="nav-link">Locations</a></li>
-              <li><a href="https://www.ebay.com/str/gothamnewsstandcomicsandbooks" class="nav-link">Online Store</a></li>
-            </ul>
-          </nav>
         </header>
         <main>
-          <section class="services" id="Products">
+          <section class="services">
             <div class="service-list">
             <ul id="services">
               <li class="service">Are you looking for the most popular titles or trying to find something new?</li>
@@ -39,7 +32,12 @@
               <li class="service">Looking for figures and collectibles? </li>
               <li class="service">Friendly staff.</li>
             </ul>
+            <div class="button-container">
+              <a href="#locations" class="button">Locations</a>
+              <a href="https://www.ebay.com/str/gothamnewsstandcomicsandbooks" class="button">Online Shop</a>
+            </div>
           </div>
+
           <div class="store-image-container">
             <img class="store-image" src="images/storeimage.jpg">
           </div>
@@ -47,6 +45,10 @@
           </section>
 
           <section class="locations" id="locations">
+            <div>
+            <h2 class="location-title">Locations</h2>
+          </div>
+          <div class="location-group">
             <div class="location-map" id="evans">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.8847969320395!2d-98.45448554894176!3d29.636089044613044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c89bd46ac3d01%3A0xe820f35cb8e36c70!2s2339%20Evans%20Rd%2C%20San%20Antonio%2C%20TX%2078259!5e0!3m2!1sen!2sus!4v1647526029640!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
@@ -55,6 +57,9 @@
               San Antonio, TX 78259<br>
               Phone: (210)569-9798
             </div>
+            
+          </div>
+          <div class="location-group">
             <div class="location-map" id="broadway">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3471.445846601531!2d-98.45143854894337!3d29.53250774943998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c8ada84c33bc5%3A0x4fa2adb982d64589!2s10109%20Broadway%2C%20San%20Antonio%2C%20TX%2078217!5e0!3m2!1sen!2sus!4v1647526194776!5m2!1sen!2sus" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -63,6 +68,7 @@
               San Antonio, TX 78217<br>
               Phone (210)379-5115
             </div>
+          </div>
           </section>
       
         </main>
