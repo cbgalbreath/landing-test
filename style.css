@@ -1,218 +1,190 @@
-body {
-    margin: 0px;
-    background-color: #3c005a;
-    font-family: helvetica, sans-serif;
+/*Global settings*/
+
+.root{
+  margin: 0;
+  padding: 0;
+  
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: black;
 }
+
+
+body{
+  background-color: purple;
+  font-family: Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100vh;
   
-  /* Header Style*/
-  header {
-    background-color: pink;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-side{
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
-  }
-  #header-img {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
-    height: 60%;
-  }
-  
-  .brand h1 {
-    font-size: 46px;
-  }
-  
-  .brand h2 {
-    font-size: 32px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*Header banner*/
+header{
+  display: flex;
+  background-color: pink;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 2 auto;
+}
+
+.logo{
+  width: 20%;
+  padding: .5rem;
+
+}
+.header-img {
+  width: 100%;
+}
+
+.name{
+  font-size: 1.5rem;
+}
+
+.slogan{
+  font-size: .75rem;
+}
+
+@media (min-width: 700px){
+  .header-img{
+    max-width: 10rem;
   }
 
-  /*main body*/
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5vw;
+  .name{
+    font-size: 3rem;
   }
-  
-  
-  .services {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 75vh;
+
+  .slogan{
+    font-size: 1.5rem;
+  }
+
+
+}
+
+/*Main section*/
+
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: pink;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+
+
+.service-list{
+  margin: .8rem;
+}
+
+#services{
+  list-style: none;
+}
+
+.button{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.store-image-container{
+  width: 80%;
+}
+
+.store-image{
+  width: 100%;
+}
+
+@media(min-width:700px){
+  .services{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2;
+    place-items: center;
+    margin: 2rem;
+    padding: 2rem;
+
+  }
+
+  .service-list{
+    font-size: 1.5rem;
+  }
+
+  .store-image-container{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 
   .button-container{
-    align-items: center;
+    align-self: center;
   }
 
   .button{
-    display: inline-block;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: pink;
-    color: black;
-    padding: 10px;
-
+    padding: 1rem;
+    font-size: 1rem;
   }
+}
+/*Locations section*/
 
-  .locations{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 95vh;
+.locations{
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.location-title{
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.location-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location{
+  margin: .5rem;
+}
+
+.online h2{
+  font-size: 1rem;
+}
+
+
+@media(min-width: 700px){
+  locations{
+    margin: 10rem;
+    padding: 2rem;
   }
-
   .location-group{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
   }
-
-  #services{
-    list-style-type: none;
-  }
-  .service-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex:1;
-  }
-  .store-image-container{
-    flex: 1;
-  }
-
-  .store-image{
-    width: 80%;
-  }
-  
-  @media (max-width: 800px) {
-    body {
-      margin: 0px;
-      background-color: #3c005a;
-      font-family: helvetica, sans-serif;
-  }
-    
-    /* Header Style*/
-    header {
-      background-color: pink;
-      display: flex;
-      justify-content: flex-start;
-    }
-    
-    .left-side{
-      display: flex;
-      justify-content: flex-start;
-      flex: 1;
-    }
-    #header-img {
-      padding-left: 20px;
-      padding-top: 20px;
-      height: 40%;
-    }
-    
-    .brand h1 {
-      font-size: 20px;
-    }
-    
-    .brand h2 {
-      font-size: 12px;
-    }
-  
-    /*main body*/
-    
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.5vw;
-    }
-    
-    
-    .services {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 20px;
-      padding: 10px;
-      background-color: white;
-      border-radius: 10px;
-      width: 80%;
-      height: 75vh;
-    }
-  
-    .button-container{
-      align-items: center;
-    }
-  
-    .button{
-      display: inline-block;
-      font-size: 20px;
-      text-decoration: none;
-      background-color: pink;
-      color: black;
-      padding: 10px;
-  
-    }
-  
-    .locations{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 20px;
-      padding: 10px;
-      background-color: white;
-      border-radius: 10px;
-      width: 80%;
-      height: 95vh;
-    }
-  
-    .location-group{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 50%;
-    }
-  
-    #services{
-      list-style-type: none;
-    }
-    .service-list{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex:1;
-    }
-    .store-image-container{
-      flex: 1;
-    }
-  
-    .store-image{
-      width: 80%;
-    }
-  }
-  
+}
